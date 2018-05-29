@@ -45,7 +45,8 @@ mvn spring-boot:run
 
 | type  | url | body example | response example |
 | ------------- | ------------- |------------- |------------- |
-| PUT  | /transactionservice/transaction/{transaction_id} |{"amount": 500, "type": "cars"}                 | { "status": "ok" } |
-| PUT  | /transactionservice/transaction/{transaction_id} |{"amount": 500, "type": "cars", "parent_id": 10}| { "status": "ok" } |
-| GET  | /transactionservice/types/{type}                 | -                                              | [1,2]              |
-| GET  | /transactionservice/sum/{type}                   | -                                              | {"sum": 100 }      |
+| PUT  | /transactionservice/transaction/{transaction_id} |{"amount": 500, "type": "cars"}                 | { "status": "ok" }        |
+| PUT  | /transactionservice/transaction/{transaction_id} |{"amount": 500, "type": "cars", "parent_id": 10}| { "status": "ok" }        |
+| GET  | /transactionservice/transaction/{transaction_id} | -                                              | {"amount": 500, "type": "cars", "parent_id": 10} |
+| GET  | /transactionservice/types/{type}                 | -                                              | [1,2]                     |
+| GET  | /transactionservice/sum/{type}                   | -                                              | {"sum": 100 }             |

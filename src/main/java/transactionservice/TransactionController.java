@@ -24,6 +24,11 @@ public class TransactionController {
         LOGGER.info("Print list of transactions : " + transactions.entrySet());
     }
 
+    @GetMapping("/transaction/{transactionId}")
+    public Transaction getTransactionById(@PathVariable(value = "transactionId") Long transactionId) {
+        return transactions.get(transactionId);
+    }
+
     @GetMapping("/types/{type}")
     public List<Long> getTransactionByType(@PathVariable(value = "type") String type) {
         List<Long> resultsByType = new ArrayList<>();
