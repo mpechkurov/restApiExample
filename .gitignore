@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 .idea/
+*.iml
 
 # IntelliJ
 out/
@@ -22,4 +23,5 @@ out/
 *.zip
 *.tar.gz
 *.rar
+
 
