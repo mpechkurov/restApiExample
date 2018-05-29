@@ -1,5 +1,11 @@
 # Home Challenge
 
+#DESCTIPTION
+
+Inside you can find RestFull webservice based on SpringBoot framework.
+All data stored in memory. 
+To run tests or build it on local environment follow instruction.
+Link to [github](https://github.com/mpechkurov/mykhailo-pechkurov) 
  
 ## Tools
 
